@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: testprd
+  namespace: test
   labels:
     app.kubernetes.io/name: prometheus-example-app
   name: prometheus-example-app
