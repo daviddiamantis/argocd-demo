@@ -10,7 +10,7 @@ spec:
   tls:
   - hosts:
     - testapp.solvops.solvinity.com
-    secretName: tls-secret
+    secretName: testapp-tls-secret
   rules:
   - host: testapp.solvops.solvinity.com
     http:
