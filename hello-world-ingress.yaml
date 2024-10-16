@@ -9,11 +9,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - testapp1.solvops.solvinity.com
-    - testapp2.solvops.solvinity.com
+    - testapp.solvops.solvinity.com
     secretName: tls-secret
   rules:
-  - host: testapp1.solvops.solvinity.com
+  - host: testapp.solvops.solvinity.com
     http:
       paths:
       - path: /
@@ -21,15 +20,5 @@ spec:
         backend:
           service:
             name: aks-helloworld-one
-            port:
-              number: 80
-  - host: testapp2.solvops.solvinity.com
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: aks-helloworld-two
             port:
               number: 80
